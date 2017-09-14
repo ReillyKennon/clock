@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Demo</title>
+    <script type="text/javascript" src="script.js"> </script>
+    <script src="node_modules/react/dist/react.js"></script>
+    <script src="node_modules/react-dom/dist/react-dom.js"></script>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+
+      <div id="app"></div>
+
+      <script>
+      
+      setInterval(time, 1000);
+
+      function time() {
+
+        let myHeader = React.createElement('h1', null, "The Time is: " + new Date().toLocaleTimeString());
+
+        ReactDOM.render(
+          myHeader,
+          document.getElementById('app', time)
+        )
+      }
+
+
+
+      </script>
+    </script>
+  </body>
+</html>
